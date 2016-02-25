@@ -1,0 +1,125 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.style {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0000ff;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 95%;
+  margin:0 auto;
+}
+
+.sec_box {
+  padding: 0px;
+  border: 1px solid black;
+  height: 155px;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 10px;
+  float: left;
+}
+
+section {
+  text-align: right;
+  background-color: gray;
+}
+
+article {
+  padding: 5px;
+  text-align: left;
+} 
+
+.head_box {
+  border: 1px solid black;
+  border-top: 0px;
+  border-right: 0px;
+  width: 100px;
+  height: 25px;
+  display:inherit;
+  text-align: center;
+  margin-left: auto;
+  top: 0;
+  right: 0;
+}
+/* element with id="mainPoint" */
+#chicken_section {
+  font-weight: bold;
+  background-color: pink;
+}
+
+/* element with id="mainPoint" */
+#beef_section {
+  font-weight: bold;
+  background-color: red;
+}
+
+/* element with id="mainPoint" */
+#sushi_section {
+  font-weight: bold;
+  background-color: yellow;
+}
+
+/********** Desktop Large devices only **********/
+@media (min-width: 992px) {
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .sec_box {
+    width: 30%;
+    height: 155px;
+  }
+ 
+}
+
+
+/********** Tablet Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) { 
+  .sec_box {
+    width: 45%;
+    height: 140px;
+  }
+
+  .sec_box_sushi {
+    width: 91.5%;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .sec_box {
+    height: 110px;
+    overflow: hidden;
+ }
+
+}
